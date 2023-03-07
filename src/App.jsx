@@ -1,32 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.css';
+import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+
+  const [count, setCount] = useState(0);
+
+  const updateCount = () => setCount(count + 1);
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+      <div className="header">
+
+      <h1>
+        Literally Anything Trivia
+      </h1>
+
+      <h2>
+          {/* Call the count state variable to display the # of cards. */}
+          Test all of your random knowledge on literally anything here.
+        </h2>
+
+       <h2>
+          {/* Call the count state variable to display the # of cards. */}
+          Number of cards: 1
+        </h2>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      {/* Add flashcard within a container.*/}
+      <div className="container">
+
+        {/* Set buyDoubleStuffed() as the onClick event handler. */}
+        <div className="flashcard">
+
+          <h3>
+            What is the capital of Switzerland?
+          </h3>   
+         
+        </div>
+    </div>
+
+    <button>
+            ➡️
+    </button>
+
     </div>
   )
 }
