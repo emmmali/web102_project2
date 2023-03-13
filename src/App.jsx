@@ -8,7 +8,7 @@ const App = () => {
 
   const updateCount = () => {
 
-    if (count > 10) {
+    if (count >= 9) {
       setCount(0);
     }
 
@@ -20,9 +20,9 @@ const App = () => {
 
   const handleFlashcardClick = () => {}
 
-  var questions = ["What is the capital of Switzerland?", "How many pickled peppers did Peter Piper pick?", "Who won the 1966 Superbowl?", "Which airport has the most flights per day?", "What is the current record for the longest sushi roll ever created?", "What happens when a groundhog sees its shadow?", "Which English word has the most synonyms?"];
+  var questions = ["What is the capital of Switzerland?", "How many pickled peppers did Peter Piper pick?", "Who won the 1966 Superbowl?", "Which airport has the most flights per day?", "What is the current record for the longest sushi roll ever created?", "What happens when a groundhog sees its shadow?", "Which English word has the most synonyms?", "Which month has the most birthdays?", "What is my gf's name?", "Pee?"];
 
-  var randomTrivia = [{"What is the capital of Switzerland?": "Bern"}, {"How many pickled peppers did Peter Piper pick?": "As many as he wished."}, {"Who won the 1966 Superbowl?":"The Green Bay Packers"}, {"Which airport has the most flights per day?":"Hartsfield–Jackson Atlanta International Airport (ATL)"}, {"What is the current record for the longest sushi roll ever created?": "2,844.61 m (9,332 ft 8 in)"}, {"What happens when a groundhog sees its shadow?": "Winter will go on for six more weeks."}, {"Which English word has the most synonyms?": "'Drunk', with over 2985 synonyms."}];
+  var randomTrivia = [{"What is the capital of Switzerland?": "Bern"}, {"How many pickled peppers did Peter Piper pick?": "As many as he wished."}, {"Who won the 1966 Superbowl?":"The Green Bay Packers"}, {"Which airport has the most flights per day?":"Hartsfield–Jackson Atlanta International Airport (ATL)"}, {"What is the current record for the longest sushi roll ever created?": "2,844.61 m (9,332 ft 8 in)"}, {"What happens when a groundhog sees its shadow?": "Winter will go on for six more weeks."}, {"Which English word has the most synonyms?": "'Drunk', with over 2985 synonyms."}, {"Which month has the most birthdays?":"August"}, {"What is my gf's name?":"ur mom"}, {"Pee?":"Poo."}];
 
   return (
     <div className="App">
