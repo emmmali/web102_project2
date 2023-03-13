@@ -1,11 +1,16 @@
 import './App.css';
 import { useState } from 'react';
+import FlashCard from './components/FlashCard'
 
 const App = () => {
 
   const [count, setCount] = useState(0);
 
   const updateCount = () => setCount(count + 1);
+
+  var questions = ["What is the capital of Switzerland?", "How many pickled peppers did Peter Piper pick?"];
+
+  var randomTrivia = [{"What is the capital of Switzerland?": "Bern"}, {"How many pickled peppers did Peter Piper pick?": "As many as he wished."}];
 
   return (
     <div className="App">
@@ -28,22 +33,13 @@ const App = () => {
 
       </div>
 
-      {/* Add flashcard within a container.*/}
-      <div className="container">
+      <FlashCard info={randomTrivia[0][questions[0]]}/>
 
-        {/* Set buyDoubleStuffed() as the onClick event handler. */}
-        <div className="flashcard">
-
-          <h3>
-            What is the capital of Switzerland?
-          </h3>   
-         
-        </div>
-    </div>
-
-    <button>
+      <button>
             ➡️
-    </button>
+      </button>
+
+
 
     </div>
   )
